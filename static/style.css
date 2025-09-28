@@ -1,0 +1,96 @@
+
+#cont,#cor{
+    margin-top: 40px;
+    background-color: purple;
+    box-shadow: 5px 5px 10px purple;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    color: white;
+    min-width: 300px;
+}
+#logout{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+h2{
+    display: flex;
+    justify-content: center;
+}
+input[type="button"]{
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 35%;
+    cursor: pointer;
+}
+input[type="button"]:hover{
+    transform: scale(1.05);
+}
+.tasks{
+    padding: 10px;
+    box-shadow: 3px 3px 3px cornsilk;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.tasks:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px cornsilk;
+}
+.d{
+    position: absolute;
+    right: 10%;
+}
+.d:hover,.u:hover,.m:hover{
+    transform: scale(1.1);
+    color: black;
+}
+label{
+    display: block;
+    margin-bottom: 10px;
+}
+#updatetask{
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 7%;
+}
+#cor{
+    display: none;
+}
+
+#updatebtn{
+    margin-left: 10%;
+    display: block;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-left: 7%;
+}
+
+.m{
+    margin-left: 40px;
+}
+#filter{
+    display: block;
+    margin-top: 10px;
+    margin-left: 120px;
+    margin-bottom: 10px;
+}
+#filterD{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    display: none;
+}
+.filters{
+    cursor: pointer;
+}

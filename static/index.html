@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="cont">
+        <input type="button" value="logout" id="logout">
+        <h2>Task Tracker</h2>
+        <input type="button" value="Add Task." id="addtaskbtn">
+        <input type="button" value="filter?" id="filter">
+        <div id="filterD">
+            <span class="filters">All</span>
+            <span class="filters">Completed</span>
+            <span class="filters">Pending</span>
+        </div>
+        <div id="main">
+            <h2 id="present">All Tasks.</h2>
+            <div  id="listContainer">
+                
+            </div>
+            <br><br>
+        </div>
+    </div>
+    <div id="cor">
+        <form action="/api/updatetask" method="post">
+            <label for="updatetask">Input New Task</label>
+            <input type="text" name="updatetask" id="updatetask">
+            <input type="text" readonly style="display: none;"id="id" name="id">
+            <input type="submit"  value="Update" id="updatebtn">
+        </form>
+    </div>
+</body>
+    <script src="script.js"></script>
+</html>
